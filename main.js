@@ -75,8 +75,17 @@ function question4() {
 
 // 5: Which items are made of eight or more materials?
 //    Display the name, number of items and the items it is made of.
-function question5 () {
+function question5() {
   // Answer:
+  let nameNumMat = [];
+
+  for (let i = 0; i < data.length; i++) {
+    // check if mats are greater than or equal to 8
+    if (data[i].materials.length >= 8) {
+      nameNumMat.push(data[i].title, ' has ', data[i].materials.length, ' materials: ', data[i].materials);
+    }
+  }
+  console.log(nameNumMat);
 }
 
 

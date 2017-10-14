@@ -91,6 +91,13 @@ function question5() {
 
 // 6: How many items were made by their sellers?
 // Answer:
-function question6 () {
-  // Answer:
+function question6() {
+  // Answer
+  let total = 0;
+
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].who_made === 'i_did'){
+      total += 1;
+    }
+  } console.log(total + ' items were made by their sellers.');
 }

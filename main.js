@@ -43,9 +43,18 @@ function question2() {
 
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.
-function question3 () {
+function question3() {
   // Answer:
+  let nameNprice = []
+
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].currency_code === "GBP") {
+      nameNprice.push(data[i].title, data[i].price)
+    }
+  }
+  console.log(nameNprice[0], " costs ", nameNprice[1], " pounds. ");
 }
+
 
 
 // 4: Display a list of all items who are made of wood.

@@ -24,10 +24,22 @@ function question1() {
 
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
-function question2 () {
-  // Answer:
-}
+function question2() {
+  //Answer:
 
+  let arrayBetween = [];
+
+  for (let i = 0; i < data.length; i++) {
+    // console.log(data[i]);
+    data[i].price
+    // console.log(data[i].price);
+    if (data[i].price >= 14 && data[i].price <= 18) {
+      // console.log(data[i].price >= 14 && data[i].price <= 18)
+      arrayBetween.push(data[i].title);
+    }
+  }
+  console.log('is this the object', arrayBetween);
+}
 
 
 // 3: Which item has a "GBP" currency code? Display it's name and price.

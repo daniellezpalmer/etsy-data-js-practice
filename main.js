@@ -7,8 +7,18 @@ console.log(data);
 
 
 // 1: Show me how to calculate the average price of all items.
-function question1 () {
+function question1() {
+  let total = 0;
+  // console.log('TOTAL', total);
   // Answer:
+  for (let i = 0; i < data.length; i++) {
+    // console.log('allthethings', data[i].price);
+    total += data[i].price;
+    // console.log('TOTAL', total);
+  }
+  // console.log('datalength', data.length);
+  let avg = total / data.length;
+  console.log('The average price is ', avg);
 }
 
 

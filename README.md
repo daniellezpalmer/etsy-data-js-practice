@@ -6,6 +6,8 @@ Use provided data to write functions solving problems asked.
 ## TODOS
 - [x] Add data and logger files
 - [x] Link JS to HTML
-- [ ] Answer problems in main js using console.logs
+- [x] Answer problems in main js using console.logs
 
 ## Challenges
+- Accessing nested arrays
+- Using console logs to my benefit
